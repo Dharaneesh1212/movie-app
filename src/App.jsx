@@ -2,6 +2,7 @@ import AuthContainer from "./components/auth";
 import Home from "./components/home";
 import Navbar from "./components/navbar";
 import Popular from "./components/popular";
+import Search from "./components/search";
 import Trending from "./components/trending";
 import Watched from "./components/watched";
 import Wishlist from "./components/wishlist";
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/auth" element={<AuthContainer />} />
           <Route path="/popular" element={<Popular />} />
           <Route path="/trending" element={<Trending />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
       </Router>
     </main>

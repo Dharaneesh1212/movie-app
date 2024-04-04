@@ -1,12 +1,28 @@
 import { Link } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
+import { FaCircleCheck } from "react-icons/fa6";
+import { FaHeart } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <main>
-      <Link to="/">Home</Link>
-      <Link to="/watched">Watched</Link>
-      <Link to="/wishlist">Wishlist</Link>
-      <Link to="/auth">Signup</Link>
+    <main className="bg-black flex items-center justify-around h-20 font-semibold text-2xl text-white fixed w-screen">
+      <Link to="/" className="flex justify-center items-center gap-2">
+        <FaHome />
+        Home
+      </Link>
+      <Link to="/watched" className="flex justify-center items-center gap-2">
+        <FaCircleCheck />
+        Watched
+      </Link>
+      <Link to="/wishlist" className="flex justify-center items-center gap-2">
+        <FaHeart />
+        Wishlist
+      </Link>
+      <Link to="/auth" className="flex justify-center items-center gap-2">
+        <FaUser />
+        Signup
+      </Link>
     </main>
   );
 };
