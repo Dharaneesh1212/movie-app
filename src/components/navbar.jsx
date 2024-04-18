@@ -6,23 +6,25 @@ import { FaUser } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <main className="bg-black flex items-center justify-around h-20 font-semibold text-2xl text-white fixed w-screen">
-      <Link to="/" className="flex justify-center items-center gap-2">
-        <FaHome />
-        Home
-      </Link>
-      <Link to="/watched" className="flex justify-center items-center gap-2">
-        <FaCircleCheck />
-        Watched
-      </Link>
-      <Link to="/wishlist" className="flex justify-center items-center gap-2">
-        <FaHeart />
-        Wishlist
-      </Link>
-      <Link to="/auth" className="flex justify-center items-center gap-2">
-        <FaUser />
-        Signup
-      </Link>
+    <main className="">
+      <div className="navbar bg-black flex items-center justify-around h-20 font-semibold text-2xl text-white">
+        <Link to="/" className="flex justify-center items-center gap-2">
+          <FaHome />
+          Home
+        </Link>
+        <Link to="/watched" className="flex justify-center items-center gap-2">
+          <FaCircleCheck />
+          Watched
+        </Link>
+        <Link to="/wishlist" className="flex justify-center items-center gap-2">
+          <FaHeart />
+          Wishlist
+        </Link>
+        <Link to="/auth" className="flex justify-center items-center gap-2">
+          <FaUser />
+          Signup
+        </Link>
+      </div>
     </main>
   );
 };

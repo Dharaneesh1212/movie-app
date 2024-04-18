@@ -1,9 +1,12 @@
+import Carousels from "./carousel";
+
 const Trending = () => {
-    return ( 
-        <main>
-            <h1>trending</h1>
-        </main>
-     );
-}
- 
+  return (
+    <main>
+      <Carousels />
+      <h1>trending</h1>
+    </main>
+  );
+};
+
 export default Trending;

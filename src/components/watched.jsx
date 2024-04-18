@@ -1,6 +1,6 @@
 const Watched = () => {
     return ( 
-        <main className="pt-20">  
+        <main className="">  
             <h1>watched</h1>
         </main>
      );

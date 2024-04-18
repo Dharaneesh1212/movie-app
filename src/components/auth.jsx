@@ -9,7 +9,7 @@ const AuthContainer = () => {
   };
 
   return (
-    <main className="flex items-center justify-center bg-white pt-28">
+    <main className="flex items-center justify-center bg-white pt-10">
       <div className="flex items-center justify-evenly flex-row bg-white h-[30rem] w-[50rem] rounded-3xl shadow-[0_5px_15px_rgba(0,0,0,0.35)]">
         <div
           className={`flex items-center justify-center ${

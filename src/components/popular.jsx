@@ -1,9 +1,12 @@
+import Carousels from "./carousel";
+
 const Popular = () => {
-    return ( 
-        <main>
-            <h1>popular</h1>
-        </main>
-     );
-}
- 
+  return (
+    <main>
+      <Carousels />
+      <h1>popular</h1>
+    </main>
+  );
+};
+
 export default Popular;
