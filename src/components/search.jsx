@@ -10,9 +10,9 @@ const Search = () => {
         <input
           type="text"
           placeholder="Search for movie"
-          className="py-2 px-5 outline-none border-b-2 text-lg"
+          className="py-2 px-5 outline-none border-b-2 border-b-yellow-500 text-lg"
         />
-        <button className="flex items-center justify-center px-3 py-3 bg-blue-500 rounded-md">
+        <button className="flex items-center justify-center px-3 py-3 bg-yellow-400 rounded-md">
           <IoSearch />
         </button>
       </div>
