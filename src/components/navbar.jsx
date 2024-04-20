@@ -18,7 +18,7 @@ const Navbar = () => {
         </Link>
         <Link to="/wishlist" className="flex justify-center items-center gap-2">
           <FaHeart />
-          Wishlist
+          Wishlists
         </Link>
         <Link to="/auth" className="flex justify-center items-center gap-2">
           <FaUser />
