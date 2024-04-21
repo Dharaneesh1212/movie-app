@@ -43,6 +43,21 @@ const Search = () => {
     }
   };
 
+  // const getData = async () => {
+  //   try {
+  //     const res = await fetch(url);
+  //     const data = await res.json();
+  //     if (data.Response === "True") {
+  //       setResults(data.Search);
+  //     } else {
+  //       setResults([]);
+  //     }
+  //     console.log(data);
+  //   } catch (error) {
+  //     console.log("something went wrong", error);
+  //   }
+  // };
+
   useEffect(() => {
     if (movies) {
       getData();
