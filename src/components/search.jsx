@@ -109,7 +109,7 @@ const Search = () => {
                   />
                 </div>
                 <div className="flex items-center justify-center">
-                  <button className="flex items-center justify-center gap-1 bg-red-600 text-xl text-white px-3 py-2 rounded-md">
+                  <button className="flex items-center justify-center gap-1 bg-red-600 text-xl font-semibold text-white px-3 py-2 rounded-md">
                     Wishlist <FaHeart />
                   </button>
                 </div>
