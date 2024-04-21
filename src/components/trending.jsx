@@ -5,7 +5,7 @@ import { FaHeart } from "react-icons/fa";
 
 const Trending = () => {
   const [trending, setTrending] = useState([]);
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(1);
   const url =
     "https://api.themoviedb.org/3/movie/upcoming?language=en-US&api_key=defd1902b4bb27bf2f154e42743a5266&page=1";
 
@@ -19,10 +19,6 @@ const Trending = () => {
       console.log("something went wrong", error);
     }
   };
-
-  useEffect(() => {
-    getData();
-  }, []);
 
   useEffect(() => {
     getData();
