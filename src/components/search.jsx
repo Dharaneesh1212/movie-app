@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa";
+import { usemovie } from "../context/movie.context";
+
 
 const Search = () => {
   const [search, setSearch] = useState(false);

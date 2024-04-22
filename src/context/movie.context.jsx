@@ -6,12 +6,27 @@ const MovieContextProvider = ({children}) => {
 
     const [add, setAdd] = useState()
 
+    const addWatched=()=>{
+        
+    };
+    const addWishlist=()=>{
+
+    };
+    const removeMovies=()=>{
+
+    };
+
+    const values = {
+        addWatched,
+        addWishlist,
+        removeMovies
+      };
     return ( 
-        <MovieContext.Provider>
+        <MovieContext.Provider value={values}>
             {children}
         </MovieContext.Provider>
      );
-}
+};
 
 
 const usemovie = () => {

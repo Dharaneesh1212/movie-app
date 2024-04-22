@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Carousels from "./carousel";
 import { FaCircleCheck } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa";
+import { usemovie } from "../context/movie.context";
 
 const Popular = () => {
   const [popular, setPopular] = useState([]);
