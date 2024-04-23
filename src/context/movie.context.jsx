@@ -4,22 +4,25 @@ const MovieContext = createContext();
 
 const MovieContextProvider = ({children}) => {
 
-    const [add, setAdd] = useState()
+    const [watch, setWatch] = useState([])
+    const [wish, setWish] = useState([])
 
-    const addWatched=()=>{
-        
+    const addWatched=(movie)=>{
+      setWatch([...watch, movie]);
     };
-    const addWishlist=()=>{
-
+    const addWishlist=(movie)=>{
+      setWish([...wish, movie]);
     };
-    const removeMovies=()=>{
+    const removeMovie=()=>{
 
     };
 
     const values = {
+        watch,
+        wish,
         addWatched,
         addWishlist,
-        removeMovies
+        removeMovie
       };
     return ( 
         <MovieContext.Provider value={values}>
