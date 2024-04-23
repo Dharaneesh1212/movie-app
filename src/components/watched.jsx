@@ -2,7 +2,7 @@ import { MdDelete } from "react-icons/md";
 import { usemovie } from "../context/movie.context";
 
 const Watched = () => {
-  const { watch, removeMovie } = usemovie();
+  const { watch, removeWatch } = usemovie();
   return (
     <main className="flex items-center justify-center flex-col m-4">
       <h1 className="flex items-center justify-center m-4 text-2xl font-bold font-serif">
@@ -26,7 +26,7 @@ const Watched = () => {
               Language : {movie.original_language}
             </span>
             <button
-              onClick={() => removeMovie(movie.id)}
+              onClick={() => removeWatch(movie)}
               className="flex items-center justify-center gap-1 bg-red-600 text-white px-3 py-2 rounded-md"
             >
               <MdDelete />
