@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
-import { FaHeart } from "react-icons/fa";
-import { usemovie } from "../context/movie.context";
-
 
 const Search = () => {
   const [search, setSearch] = useState(false);
@@ -109,11 +106,6 @@ const Search = () => {
                     alt="movie_poster"
                     className="h-[25rem] w-[25rem]"
                   />
-                </div>
-                <div className="flex items-center justify-center">
-                  <button className="flex items-center justify-center gap-1 bg-red-600 text-xl font-semibold text-white px-3 py-2 rounded-md">
-                    Wishlist <FaHeart />
-                  </button>
                 </div>
               </main>
               <div className="flex items-start justify-evenly m-4 flex-col gap-4 w-[40rem]">

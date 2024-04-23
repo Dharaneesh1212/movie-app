@@ -28,7 +28,9 @@ const MovieContextProvider = ({ children }) => {
       toast.success("Movie added to wishlist successfully!");
     }
   };
-  const removeMovie = () => {};
+  const removeMovie = () => {
+
+  };
 
   const values = {
     watch,
@@ -39,7 +41,9 @@ const MovieContextProvider = ({ children }) => {
     removeMovie,
   };
   return (
-    <MovieContext.Provider value={values}>{children}</MovieContext.Provider>
+    <MovieContext.Provider value={values}>
+      {children}
+    </MovieContext.Provider>
   );
 };
 
