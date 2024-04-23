@@ -10,8 +10,7 @@ const Trending = () => {
   const { addWatched } = usemovie();
   const { addWishlist } = usemovie();
 
-  const url =
-    "https://api.themoviedb.org/3/movie/upcoming?language=en-US&api_key=defd1902b4bb27bf2f154e42743a5266&page=1";
+  const url = `https://api.themoviedb.org/3/movie/upcoming?language=en-US&api_key=defd1902b4bb27bf2f154e42743a5266&page=${page}`;
 
   const getData = async () => {
     try {

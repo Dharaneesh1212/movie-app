@@ -11,7 +11,7 @@ const Popular = () => {
   const { addWishlist } = usemovie();
 
   const url =
-    "https://api.themoviedb.org/3/movie/popular?language=en-US&api_key=defd1902b4bb27bf2f154e42743a5266&page=1";
+    `https://api.themoviedb.org/3/movie/popular?language=en-US&api_key=defd1902b4bb27bf2f154e42743a5266&page=${page}`;
 
   const getData = async () => {
     try {
@@ -36,7 +36,7 @@ const Popular = () => {
       setPage((prev) => prev + 1);
     }
   };
-
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
