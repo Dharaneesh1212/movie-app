@@ -7,7 +7,7 @@ import { FaUser } from "react-icons/fa";
 const Navbar = () => {
   return (
     <main className="">
-      <div className="navbar bg-black flex items-center justify-around h-20 font-semibold text-2xl text-white">
+      <div id="navbar" className="bg-black flex items-center justify-around h-20 w-full font-semibold text-2xl text-white">
         <Link to="/" className="flex justify-center items-center gap-2">
           <FaHome />
           Home

@@ -10,8 +10,7 @@ const Popular = () => {
   const { addWatched } = usemovie();
   const { addWishlist } = usemovie();
 
-  const url =
-    `https://api.themoviedb.org/3/movie/popular?language=en-US&api_key=defd1902b4bb27bf2f154e42743a5266&page=${page}`;
+  const url = `https://api.themoviedb.org/3/movie/popular?language=en-US&api_key=defd1902b4bb27bf2f154e42743a5266&page=${page}`;
 
   const getData = async () => {
     try {
@@ -36,7 +35,7 @@ const Popular = () => {
       setPage((prev) => prev + 1);
     }
   };
-  
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -51,32 +50,49 @@ const Popular = () => {
         {popular.map((movie) => (
           <main
             key={movie.id}
+            id="popular"
             className="flex items-center justify-center flex-col h-[30rem] w-[38rem] gap-8 rounded-xl shadow-[0_5px_15px_rgba(0,0,0,0.35)] m-6"
           >
             <main className="flex items-center justify-center flex-row gap-4">
               <div>
                 <img
                   className="h-[18rem] w-[15rem]"
+                  id="popularimg"
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                   alt="movie-img"
                 />
               </div>
               <div className="flex items-start justify-center flex-col gap-2 w-[18rem]">
-                <h1 className="flex items-center justify-center text-xl font-bold">
+                <h1
+                  id="populartitle"
+                  className="flex items-center justify-center text-xl font-bold"
+                >
                   Title : {movie.title.slice(0, 20)}
                 </h1>
-                <span className="flex items-center justify-center font-semibold text-xl">
+                <span
+                  id="popularlan"
+                  className="flex items-center justify-center font-semibold text-xl"
+                >
                   Language : {movie.original_language}
                 </span>
-                <p className="text-lg font-medium flex items-center justify-center ml-1 mr-1">
+                <p
+                  id="populardes"
+                  className="text-lg font-medium flex items-center justify-center ml-1 mr-1"
+                >
                   Description : {movie.overview.slice(0, 250)}
                 </p>
-                <p className="font-medium text-lg flex items-center justify-center ml-1 mr-1">
+                <p
+                  id="populardate"
+                  className="font-medium text-lg flex items-center justify-center ml-1 mr-1"
+                >
                   Release date : {movie.release_date}
                 </p>
               </div>
             </main>
-            <div className="flex items-center justify-center gap-8 text-xl font-semibold">
+            <div
+              id="btn"
+              className="flex items-center justify-center gap-8 text-xl font-semibold"
+            >
               <button
                 onClick={() => addWatched(movie)}
                 className="flex items-center justify-center gap-1 bg-green-600 text-white px-3 py-2 rounded-md"

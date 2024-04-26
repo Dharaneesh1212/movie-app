@@ -74,7 +74,10 @@ const Search = () => {
 
   return (
     <main className="flex items-center justify-center flex-col">
-      <h1 className="flex items-center justify-center m-4 text-2xl font-bold font-serif">
+      <h1
+        id="searchhead"
+        className="flex items-center justify-center m-4 text-2xl font-bold font-serif"
+      >
         SEARCH
       </h1>
       <div className="flex items-center justify-center">
@@ -97,53 +100,62 @@ const Search = () => {
           {results.map((movie) => (
             <div
               key={movie.imdbID}
+              id="search"
               className="flex items-center justify-evenly m-4 shadow-[0_5px_15px_rgba(0,0,0,0.35)] h-[32rem] w-[60rem] rounded-lg"
             >
-              <main>
                 <div className="flex items-center justify-evenly m-4">
                   <img
                     src={movie.Poster}
+                    id="searchimg"
                     alt="movie_poster"
                     className="h-[25rem] w-[25rem]"
                   />
                 </div>
-              </main>
-              <div className="flex items-start justify-evenly m-4 flex-col gap-4 w-[40rem]">
-                <h1 className="flex items-center justify-center text-xl font-extrabold">
-                  Title : {movie.Title}
+              <div id="searchtwo" className="flex items-start justify-evenly m-4 flex-col gap-4 w-[40rem]">
+                <h1
+                  id="searchtitle"
+                  className="flex items-center justify-center text-xl font-extrabold"
+                >
+                  Title : {movie.Title.slice(0,9)}
                 </h1>
                 <span
                   key={movie.imdbID}
+                  id="searchlan"
                   className="flex items-center justify-center font-medium text-xl"
                 >
                   Language : {movie.Language}
                 </span>
                 <p
                   key={movie.imdbID}
+                  id="searchdes"
                   className="text-xl flex items-center justify-center font-medium ml-1 mr-1"
                 >
-                  Story : {movie.Plot}
+                  Story : {movie.Plot.slice(0, 50)}
                 </p>
                 <span
                   key={movie.imdbID}
+                  id="searchgen"
                   className="flex items-center justify-center font-medium text-xl"
                 >
                   Genre : {movie.Genre}
                 </span>
                 <p
                   key={movie.imdbID}
+                  id="searchact"
                   className="flex items-center justify-center font-medium text-xl"
                 >
                   Actors : {movie.Actors}
                 </p>
                 <span
                   key={movie.imdbID}
+                  id="searchdate"
                   className="flex items-center justify-center text-lg font-medium"
                 >
                   Released : {movie.Released}
                 </span>
                 <span
                   key={movie.imdbID}
+                  id="searchtyp"
                   className="flex items-center justify-center text-lg font-medium"
                 >
                   Type : {movie.Type}

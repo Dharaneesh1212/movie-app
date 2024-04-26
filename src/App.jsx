@@ -7,6 +7,7 @@ import Trending from "./components/trending";
 import Watched from "./components/watched";
 import Wishlist from "./components/wishlist";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
 
 const App = () => {
   return (
