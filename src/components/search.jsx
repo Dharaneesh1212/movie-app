@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
 
 const Search = () => {
-  const [search, setSearch] = useState(false);
+  // const [search, setSearch] = useState(false);
   const [movies, setMovies] = useState("");
   const [results, setResults] = useState([]);
 
@@ -58,19 +58,17 @@ const Search = () => {
   // };
 
   useEffect(() => {
-    if (movies) {
-      getData();
-    }
+    getData();
   }, [movies]);
 
   const handleChange = (e) => {
     setMovies(e.target.value);
   };
 
-  const handleSearch = () => {
-    setSearch(true);
-    getData();
-  };
+  // const handleSearch = () => {
+  //   setSearch(true);
+  //   getData();
+  // };
 
   return (
     <main className="flex items-center justify-center flex-col">
@@ -88,14 +86,14 @@ const Search = () => {
           onChange={(e) => setMovies(e.target.value)}
           className="py-2 px-5 outline-none border-b-2 border-b-yellow-500 text-lg"
         />
-        <button
+        {/* <button
           onClick={handleSearch}
           className="flex items-center justify-center px-3 py-3 bg-yellow-400 rounded-md"
         >
           <IoSearch />
-        </button>
+        </button> */}
       </div>
-      {search && results.length > 0 && (
+      {results.length > 0 && (
         <div>
           {results.map((movie) => (
             <div
