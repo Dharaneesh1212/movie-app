@@ -103,20 +103,23 @@ const Search = () => {
               id="search"
               className="flex items-center justify-evenly m-4 shadow-[0_5px_15px_rgba(0,0,0,0.35)] h-[32rem] w-[60rem] rounded-lg"
             >
-                <div className="flex items-center justify-evenly m-4">
-                  <img
-                    src={movie.Poster}
-                    id="searchimg"
-                    alt="movie_poster"
-                    className="h-[25rem] w-[25rem]"
-                  />
-                </div>
-              <div id="searchtwo" className="flex items-start justify-evenly m-4 flex-col gap-4 w-[40rem]">
+              <div className="flex items-center justify-evenly m-4">
+                <img
+                  src={movie.Poster}
+                  id="searchimg"
+                  alt="movie_poster"
+                  className="h-[25rem] w-[25rem]"
+                />
+              </div>
+              <div
+                id="searchtwo"
+                className="flex items-start justify-evenly m-4 flex-col gap-4 w-[40rem]"
+              >
                 <h1
                   id="searchtitle"
                   className="flex items-center justify-center text-xl font-extrabold"
                 >
-                  Title : {movie.Title.slice(0,9)}
+                  Title : {movie.Title.slice(0, 9)}
                 </h1>
                 <span
                   key={movie.imdbID}
@@ -144,7 +147,7 @@ const Search = () => {
                   id="searchact"
                   className="flex items-center justify-center font-medium text-xl"
                 >
-                  Actors : {movie.Actors}
+                  Actors : {movie.Actors.slice(0, 32)}
                 </p>
                 <span
                   key={movie.imdbID}

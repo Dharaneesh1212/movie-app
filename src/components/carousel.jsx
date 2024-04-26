@@ -37,11 +37,11 @@ const Carousels = () => {
           autoPlaySpeed={2000}
           autoPlay={true}
         >
-          <img className="w-screen h-[35rem]" src={one} alt="" />
-          <img className="w-screen h-[35rem]" src={two} alt="" />
-          <img className="w-screen h-[35rem]" src={three} alt="" />
-          <img className="w-screen h-[35rem]" src={four} alt="" />
-          <img className="w-screen h-[35rem]" src={five} alt="" />
+          <img id="img" className="w-screen h-[35rem]" src={one} alt="" />
+          <img id="img" className="w-screen h-[35rem]" src={two} alt="" />
+          <img id="img" className="w-screen h-[35rem]" src={three} alt="" />
+          <img id="img" className="w-screen h-[35rem]" src={four} alt="" />
+          <img id="img" className="w-screen h-[35rem]" src={five} alt="" />
         </Carousel>
       </div>
     </main>
