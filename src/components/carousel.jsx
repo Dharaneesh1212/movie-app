@@ -1,8 +1,8 @@
 import one from "../assets/images/one.jpg";
 import two from "../assets/images/two.jpg";
-import three from "../assets/images/three.jpeg";
+import three from "../assets/images/three.jpg";
 import four from "../assets/images/four.jpg";
-import five from "../assets/images/five.jpg";
+import five from "../assets/images/five.jpeg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
