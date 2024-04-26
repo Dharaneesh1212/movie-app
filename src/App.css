@@ -139,3 +139,63 @@
     height: 17.5rem;
   }
 }
+
+/* Tablet responsive */
+@media (min-width: 375px) and (max-width: 768px) {
+  #img {
+    width: 100vw;
+    height: 25rem;
+  }
+  #signup {
+    width: 23rem;
+  }
+  #signin {
+    width: 23rem;
+  }
+  #signupform {
+    width: 23rem;
+  }
+  #signinform {
+    width: 23rem;
+  }
+  #searchhead {
+    font-size: 1.3rem;
+  }
+  #search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 25rem;
+    width: 35rem;
+  }
+  #searchtwo {
+    width: 20rem;
+    height: 23rem;
+  }
+  #searchimg {
+    height: 15rem;
+    width: 15rem;
+  }
+  #searchtitle {
+    font-size: 1.2rem;
+  }
+  #searchlan {
+    font-size: 1.2rem;
+  }
+  #searchdes {
+    font-size: 0.8rem;
+  }
+  #searchdate {
+    font-size: 0.8rem;
+  }
+  #searchgen {
+    font-size: 0.8rem;
+  }
+  #searchact {
+    font-size: 0.8rem;
+  }
+  #searchtyp {
+    font-size: 0.8rem;
+  }
+}
