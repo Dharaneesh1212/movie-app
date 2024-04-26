@@ -80,6 +80,12 @@ const Search = () => {
       >
         SEARCH
       </h1>
+      <h1
+        id="searchhead"
+        className="flex items-center justify-center m-4 text-2xl font-serif"
+      >
+        This functionality available only for Desktops and Laptops only !
+      </h1>
       <div className="flex items-center justify-center">
         <input
           type="text"
