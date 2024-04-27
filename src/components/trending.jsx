@@ -3,6 +3,7 @@ import Carousels from "./carousel";
 import { FaCircleCheck } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa";
 import { usemovie } from "../context/movie.context";
+import { toast, ToastContainer } from "react-toastify";
 
 const Trending = () => {
   const [trending, setTrending] = useState([]);
@@ -20,6 +21,7 @@ const Trending = () => {
       console.log(data.results);
     } catch (error) {
       console.log("something went wrong", error);
+      toast.error("Try after some time ," + error.message);
     }
   };
 

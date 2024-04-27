@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
+import { toast } from "react-toastify";
 
 const Search = () => {
   const [search, setSearch] = useState(false);
@@ -17,6 +18,7 @@ const Search = () => {
       return data;
     } catch (error) {
       console.error("Error fetching movie details:", error);
+      toast.error("Try after some time ," + error.message);
       return null;
     }
   };
