@@ -37,9 +37,9 @@ const Search = () => {
         setResults(moviesWithDetails);
       } else {
         setResults([]);
-        if (isMobile) {
-          toast.error("Search functionality is not available on mobile devices.");
-        }
+        // if (isMobile) {
+        //   toast.error("Search functionality is not available on mobile devices.");
+        // }
       }
     } catch (error) {
       console.error("Error fetching search results:", error);
@@ -102,7 +102,7 @@ const Search = () => {
       </div>
       {search && results.length > 0 && (
         <div>
-          {results.map((movie) => (
+          {results.map((movie,index) => (
             <div
               key={movie.imdbID}
               id="search"
@@ -127,42 +127,36 @@ const Search = () => {
                   Title : {movie.Title.slice(0, 9)}
                 </h1>
                 <span
-                  key={movie.imdbID}
                   id="searchlan"
                   className="flex items-center justify-center font-medium text-xl"
                 >
                   Language : {movie.Language}
                 </span>
                 <p
-                  key={movie.imdbID}
                   id="searchdes"
                   className="text-xl flex items-center justify-center font-medium ml-1 mr-1"
                 >
                   Story : {movie.Plot.slice(0, 50)}
                 </p>
                 <span
-                  key={movie.imdbID}
                   id="searchgen"
                   className="flex items-center justify-center font-medium text-xl"
                 >
                   Genre : {movie.Genre}
                 </span>
                 <p
-                  key={movie.imdbID}
                   id="searchact"
                   className="flex items-center justify-center font-medium text-xl"
                 >
                   Actors : {movie.Actors.slice(0, 32)}
                 </p>
                 <span
-                  key={movie.imdbID}
                   id="searchdate"
                   className="flex items-center justify-center text-lg font-medium"
                 >
                   Released : {movie.Released}
                 </span>
                 <span
-                  key={movie.imdbID}
                   id="searchtyp"
                   className="flex items-center justify-center text-lg font-medium"
                 >
