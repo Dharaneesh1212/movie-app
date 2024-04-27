@@ -8,10 +8,10 @@ const Search = () => {
   const [results, setResults] = useState([]);
 
   const key = "6f5918d3";
-  const url = `http://www.omdbapi.com/?s=${movies}&apikey=${key}`;
+  const url = `https://www.omdbapi.com/?s=${movies}&apikey=${key}`;
 
   const fetchMovieDetails = async (imdbID) => {
-    const detailUrl = `http://www.omdbapi.com/?i=${imdbID}&apikey=${key}`;
+    const detailUrl = `https://www.omdbapi.com/?i=${imdbID}&apikey=${key}`;
     try {
       const res = await fetch(detailUrl);
       const data = await res.json();
@@ -37,9 +37,6 @@ const Search = () => {
         setResults(moviesWithDetails);
       } else {
         setResults([]);
-        // if (isMobile) {
-        //   toast.error("Search functionality is not available on mobile devices.");
-        // }
       }
     } catch (error) {
       console.error("Error fetching search results:", error);
