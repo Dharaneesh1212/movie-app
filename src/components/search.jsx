@@ -37,6 +37,9 @@ const Search = () => {
         setResults(moviesWithDetails);
       } else {
         setResults([]);
+        if (isMobile) {
+          toast.error("Search functionality is not available on mobile devices.");
+        }
       }
     } catch (error) {
       console.error("Error fetching search results:", error);
@@ -81,12 +84,6 @@ const Search = () => {
         className="flex items-center justify-center m-4 text-2xl font-bold font-serif"
       >
         SEARCH
-      </h1>
-      <h1
-        id="searchhead"
-        className="flex items-center justify-center m-4 text-2xl font-serif"
-      >
-        This functionality available only for Desktops and Laptops only !
       </h1>
       <div className="flex items-center justify-center">
         <input
