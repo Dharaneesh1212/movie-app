@@ -1,5 +1,16 @@
 import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
+// Firebase
+import {
+  signInWithGooglePopUp,
+  signInAuthUserWithEmailAndPassword,
+  createAuthUserWithEmailAndPassword,
+  createUserDocumentFromAuth,
+  movieAuth,
+} from "../utils/firebase";
+// Signup , signin
+import { updateProfile, signInWithEmailAndPassword } from "firebase/auth";
 
 const AuthContainer = () => {
   const [activeTab, setActiveTab] = useState("sign-up");
