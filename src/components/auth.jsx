@@ -59,7 +59,7 @@ const AuthContainer = () => {
         >
           <form
             id="signinform"
-            className="flex items-center justify-center flex-col gap-10 w-[25rem]"
+            className="flex items-center justify-center flex-col gap-10 w-[23rem]"
           >
             <h1 className="animate__animated animate__zoomIn text-2xl font-semibold font-mono">
               Sign In
