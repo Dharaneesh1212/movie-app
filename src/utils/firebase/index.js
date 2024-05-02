@@ -58,7 +58,7 @@ const createUserDocumentFromAuth = async (userAuth) => {
   const userDocRef = doc(movieDb, "users", userAuth.uid);
   const userSnapshot = await getDoc(userDocRef);
 
-  if (userSnapshot.exists()) {
+  if (!userSnapshot.exists()) {
     const { displayName, email } = userAuth;
 
     if (displayName) {
