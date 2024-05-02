@@ -39,8 +39,8 @@ const signInWithGooglePopUp = async () =>
 
 // Signup
 const createAuthUserWithEmailAndPassword = async (email, password) => {
-  if (!email || !password)
-    return createUserWithEmailAndPassword(movieAuth, email, password);
+  if (!email || !password) return;
+  return createUserWithEmailAndPassword(movieAuth, email, password);
 };
 
 // Signin
@@ -70,15 +70,13 @@ const createUserDocumentFromAuth = async (userAuth) => {
           email,
           createdAt,
         });
-        toast("User created successfully");
+        toast.success("User created successfully");
         console.log("User created successfully");
       } catch (error) {
-        toast("Error on creating user", error);
+        toast.error("Error on creating user", error);
         console.log("error", error);
       }
     }
-  } else {
-    toast("User already exist");
   }
 
   return userDocRef;
