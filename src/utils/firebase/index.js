@@ -55,18 +55,18 @@ const movieDb = getFirestore(movieApp);
 const createUserDocumentFromAuth = async (userAuth) => {
   if (!userAuth) return;
 
-  const userDocRef = doc(movieDb, "users", movieAuth.uid);
+  const userDocRef = doc(movieDb, "users", userAuth.uid);
   const userSnapshot = await getDoc(userDocRef);
 
   if (userSnapshot.exists()) {
-    const { displaName, email } = userAuth;
+    const { displayName, email } = userAuth;
 
-    if (displaName) {
+    if (displayName) {
       const createdAt = Timestamp.now();
 
       try {
         await setDoc(userDocRef, {
-          displaName,
+          displayName,
           email,
           createdAt,
         });

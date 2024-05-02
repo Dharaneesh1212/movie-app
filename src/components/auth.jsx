@@ -14,6 +14,7 @@ import { updateProfile, signInWithEmailAndPassword } from "firebase/auth";
 
 const AuthContainer = () => {
   const [activeTab, setActiveTab] = useState("sign-up");
+  const navigate = useNavigate();
 
   const handleTabToggle = () => {
     setActiveTab(activeTab === "sign-up" ? "sign-in" : "sign-up");
