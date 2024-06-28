@@ -125,6 +125,7 @@ const AuthContainer = () => {
               value={signupUserName}
               type="text"
               placeholder="Name"
+              name="username"
               id="inputone"
               className="animate__animated animate__zoomIn h-8 w-72 bg-slate-100 p-1 rounded-md font-sans font-medium text-lg outline-none"
             />
@@ -133,6 +134,7 @@ const AuthContainer = () => {
               value={signupEmail}
               type="email"
               placeholder="Email"
+              name="email"
               id="inputtwo"
               className="animate__animated animate__zoomIn h-8 w-72 bg-slate-100 p-1 rounded-md font-sans font-medium text-lg outline-none"
             />
@@ -141,6 +143,7 @@ const AuthContainer = () => {
               value={signupPassword}
               type="password"
               placeholder="Password"
+              name="password"
               id="inputthree"
               className="animate__animated animate__zoomIn h-8 w-72 bg-slate-100 p-1 rounded-md font-sans font-medium text-lg outline-none"
             />
@@ -175,6 +178,7 @@ const AuthContainer = () => {
               value={signinEmail}
               type="email"
               placeholder="Email"
+              name="email"
               id="inputfour"
               className="animate__animated animate__zoomIn h-8 w-72 bg-slate-100 p-1 rounded-md font-sans font-medium text-lg outline-none"
             />
@@ -183,6 +187,7 @@ const AuthContainer = () => {
               value={signinPassword}
               type="password"
               placeholder="Password"
+              name="password"
               id="inputfive"
               className="animate__animated animate__zoomIn h-8 w-72 bg-slate-100 p-1 rounded-md font-sans font-medium text-lg outline-none"
             />
